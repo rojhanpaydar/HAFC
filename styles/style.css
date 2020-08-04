@@ -359,6 +359,12 @@ a:hover {
 body,
 html {
   height: 100%;
+  background-color: #fbf7f5;
+}
+
+.main,
+.header {
+  height: 100%;
 }
 
 .flexContainer {
@@ -379,13 +385,17 @@ html {
 
 .placeHolder img {
   padding-top: 15%;
-  width: 200px;
+  width: 300px;
 }
 
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
   width: 90%;
+}
+
+body {
+  height: 100%;
 }
 
 footer {
