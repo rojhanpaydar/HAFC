@@ -454,7 +454,7 @@ header {
 }
 
 footer {
-  background-color: beige;
+  background-color: #000;
   padding: 3%;
   position: absolute;
   bottom: 0;
