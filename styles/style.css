@@ -470,3 +470,7 @@ footer {
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
 }
+
+footer p {
+  color: #fff;
+}

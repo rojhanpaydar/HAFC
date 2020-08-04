@@ -2,7 +2,6 @@
 
 footer {
     background-color: #000;
-    color: #fff
     padding: 3%; 
     position: absolute;
     bottom: 0; 
@@ -10,6 +9,9 @@ footer {
     display: flex; 
     justify-content: center;
     @include fontRoboto(20px);
+    p {
+        color: #fff;
+    }
 }
 
 
