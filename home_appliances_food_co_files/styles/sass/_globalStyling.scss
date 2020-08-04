@@ -1,0 +1,36 @@
+body,
+html {
+    height: 100%; 
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+.placeHolder {
+    img {
+        padding-top: 15%; 
+        width: 200px; 
+    }
+}
+
+.wrapper {
+    max-width: 1280px; 
+    margin: 0 auto; 
+    width: 90%; 
+}
+
+
+
+// * {
+//     border: 2px solid purple; 
+// }
+
+
+// COLOURS
+// teal hex #9BD9CC
+// pink hex #F4CAEE

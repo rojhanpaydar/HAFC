@@ -1,0 +1,38 @@
+@mixin fontRoboto($sizeValue) {
+  font-size: $sizeValue;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter; 
+}
+
+nav {
+    width: 40%;
+    padding-top: 5%; 
+    ul li {
+        display: flex; 
+        justify-content: space-evenly;
+        @include fontRoboto(20px);
+
+            a {
+            border: none;
+            }
+        }
+    }
+
+a {
+  background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 1px 1px;
+  color: #000;
+  text-decoration: none;
+  transition: background-size .2s;
+}
+
+a:hover {
+  background-size: 4px 50px;
+}
