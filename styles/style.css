@@ -259,13 +259,22 @@ img {
   --mainColor: #9BD9CC;
 }
 
+nav {
+  visibility: hidden;
+}
+
 h1 {
-  font-size: 50px;
-  color: #F3FAFF;
-  font-family: 'Roboto', sans-serif;
-  font-weight: lighter;
+  font-family: "AZ Sailor Tattoo W05 Regular";
+  font-size: 40px;
   color: black;
-  padding-top: 5%;
+  margin-bottom: 5%;
+  width: 50%;
+  text-align: center;
+}
+
+h2 {
+  font-family: "AZ Sailor Tattoo W05 Regular";
+  font-size: 40px;
 }
 
 .imageSize img {
@@ -357,19 +366,12 @@ a:hover {
   background-size: 4px 50px;
 }
 
-body,
-html,
-main,
-header {
-  height: 100%;
-}
-
 @-webkit-keyframes mymove {
   from {
     left: -500px;
   }
   to {
-    left: 15px;
+    left: 5px;
   }
 }
 
@@ -378,7 +380,7 @@ header {
     left: -500px;
   }
   to {
-    left: 15px;
+    left: 5px;
   }
 }
 
@@ -393,6 +395,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .truck img {
@@ -407,6 +412,11 @@ header {
   max-width: 1280px;
   margin: 0 auto;
   width: 90%;
+}
+
+@font-face {
+  font-family: "AZ Sailor Tattoo W05 Regular";
+  src: url("WEBFONTS/Fonts/5204411/46790c89-144f-445b-a870-7baa40f97715.woff2") format("woff2"), url("WEBFONTS/Fonts/5204411/dfd761ed-4039-4cb8-979a-ef953d4ee7e0.woff") format("woff");
 }
 
 /* tablet screens */
@@ -426,30 +436,42 @@ header {
         -ms-flex-align: center;
             align-items: center;
   }
+  h1 {
+    width: 50%;
+    font-size: 30px;
+  }
 }
 
 /* phone screens */
 @media (max-width: 580px) {
-  h1 {
-    font-size: 40px;
-    margin-top: 20%;
-  }
   .imageSize img {
     width: 100px;
   }
 }
 
 /* smaller phone screens */
-@media (max-width: 450px) {
+@media (max-width: 490px) {
   .truck img {
     width: 250px;
     margin-top: 20%;
+  }
+  h1 {
+    width: 80%;
+    font-size: 35px;
   }
 }
 
 @media (max-width: 375px) {
   .truck img {
     width: 200px;
+  }
+  h1 {
+    width: 100%;
+  }
+  h2 {
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
   }
 }
 

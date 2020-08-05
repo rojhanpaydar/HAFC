@@ -1,14 +1,14 @@
-body,
-html,
-main,
-header {
-    height: 100%;
-}
+// body,
+// html,
+// main,
+// header {
+//     height: 100%;
+// }
 
 
 @keyframes mymove {
   from {left: -500px;}
-  to {left: 15px;} 
+  to {left: 5px;} 
 }
 
 
@@ -16,6 +16,7 @@ header {
     display: flex;
     flex-direction: column; 
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -34,6 +35,11 @@ header {
     margin: 0 auto; 
     width: 90%; 
 }
+
+ @font-face{
+        font-family:"AZ Sailor Tattoo W05 Regular";
+        src:url("WEBFONTS/Fonts/5204411/46790c89-144f-445b-a870-7baa40f97715.woff2") format("woff2"),url("WEBFONTS/Fonts/5204411/dfd761ed-4039-4cb8-979a-ef953d4ee7e0.woff") format("woff");
+    }
 
 
 
