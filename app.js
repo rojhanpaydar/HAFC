@@ -6,7 +6,7 @@ setTimeout(function () {
 setTimeout(function () {
     document.getElementById("honk").play();
     honk.volume = 0.2;
-}, 2000)
+}, 2500)
 
 
 

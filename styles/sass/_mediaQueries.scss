@@ -28,10 +28,6 @@
 
 /* smaller phone screens */
 @media (max-width: 490px) {
-    .truck img {
-        width: 250px; 
-        margin-top: 20%; 
-    }
 
     h1 {
         width: 80%;
@@ -40,13 +36,10 @@
 
     h2 {
         font-size: 30px; 
-    }
+    }  
 }
 
 @media (max-width: 375px) {
-    .truck img {
-        width: 200px; 
-    }
 
     h1 {
         width: 100%;  

@@ -369,8 +369,6 @@ a:hover {
 #truck {
   position: relative;
   left: -900px;
-  width: 100px;
-  height: 100px;
   -webkit-animation: truck 5s forwards;
   -webkit-animation-delay: 1.2s;
   animation: truck 5s forwards;
@@ -382,7 +380,7 @@ a:hover {
     left: -900px;
   }
   to {
-    left: -100px;
+    left: 0px;
   }
 }
 
@@ -391,7 +389,7 @@ a:hover {
     left: -900px;
   }
   to {
-    left: -100px;
+    left: 0px;
   }
 }
 
@@ -459,10 +457,6 @@ a:hover {
 
 /* smaller phone screens */
 @media (max-width: 490px) {
-  .truck img {
-    width: 250px;
-    margin-top: 20%;
-  }
   h1 {
     width: 80%;
     font-size: 35px;
@@ -473,9 +467,6 @@ a:hover {
 }
 
 @media (max-width: 375px) {
-  .truck img {
-    width: 200px;
-  }
   h1 {
     width: 100%;
   }
