@@ -459,6 +459,9 @@ a:hover {
     width: 80%;
     font-size: 35px;
   }
+  h2 {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 375px) {
