@@ -5,11 +5,33 @@
 //     height: 100%;    
 // }
 
-
-@keyframes mymove {
-  from {left: -500px;}
-  to {left: 5px;} 
+#truck {
+  position: relative;
+  left: -900px;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: truck 5s forwards;
+  -webkit-animation-delay: 1.2s;
+  animation: truck 5s forwards;
+  animation-delay: 1.2s;
 }
+
+
+@-webkit-keyframes truck {
+  from {left: -900px;}
+  to {left: -100px;} 
+}
+
+@keyframes truck {
+  from {left: -900px;}
+  to {left: -100px;} 
+}
+
+
+// @keyframes truck {
+//   from {left: -500px;}
+//   to {left: 5px;} 
+// }
 
 
 .flexContainer {
@@ -24,8 +46,9 @@
     img {
         padding-top: 15%; 
         width: 300px;  
-        animation: mymove 5s forwards;
-        position: relative;
+        // animation: truck 5s forwards;
+        // animation-delay: 2s;
+        // position: relative;
     }
 }
 
