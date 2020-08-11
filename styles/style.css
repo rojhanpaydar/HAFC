@@ -395,7 +395,6 @@ nav img {
 }
 
 .truck img {
-  padding-top: 15%;
   width: 300px;
 }
 
@@ -438,9 +437,6 @@ nav img {
 @media (max-width: 580px) {
   nav img {
     width: 80px;
-  }
-  .truck img {
-    padding-top: 40%;
   }
 }
 
