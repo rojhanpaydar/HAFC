@@ -259,15 +259,12 @@ img {
   --mainColor: #9BD9CC;
 }
 
-nav {
-  visibility: hidden;
-}
-
 h1 {
   font-family: "AZ Sailor Tattoo W05 Regular";
   font-size: 40px;
   color: black;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
+  margin-top: 2%;
   width: 50%;
   text-align: center;
 }
@@ -277,60 +274,32 @@ h2 {
   font-size: 40px;
 }
 
-.imageSize img {
-  width: 200px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding-right: 1%;
-  padding-top: 1%;
-}
-
-aside {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  position: absolute;
-  top: 40%;
-  right: 0;
-  padding-right: 2%;
-}
-
-aside ul li {
+.socialIcons ul li {
   list-style: none;
 }
 
-aside ul li a {
+.socialIcons ul li a {
   font-size: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 75%;
+  color: #fff;
+}
+
+.socialIcons a:hover {
+  color: #000;
 }
 
 nav {
-  width: 40%;
-  padding-top: 5%;
+  width: 100%;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
 nav ul li {
@@ -340,14 +309,20 @@ nav ul li {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 20px;
   color: #000;
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
+  width: 80%;
+  margin: 0 auto;
 }
 
 nav ul li a {
   border: none;
+  display: inline-table;
 }
 
 a {
@@ -356,7 +331,7 @@ a {
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 1px 1px;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   -webkit-transition: background-size .2s;
   transition: background-size .2s;
@@ -364,6 +339,16 @@ a {
 
 a:hover {
   background-size: 4px 50px;
+  color: #000;
+}
+
+nav img {
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 #truck {
@@ -426,32 +411,36 @@ a:hover {
 }
 
 /* tablet screens */
-@media (max-width: 795px) {
-  .imageSize img {
-    width: 150px;
+@media (max-width: 1024px) {
+  h1 {
+    width: 50%;
+    font-size: 30px;
+    margin-bottom: 5%;
   }
+}
+
+/* tablet screens */
+@media (max-width: 795px) {
   nav ul li {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   h1 {
-    width: 50%;
-    font-size: 30px;
+    margin-top: 5%;
   }
 }
 
 /* phone screens */
 @media (max-width: 580px) {
-  .imageSize img {
-    width: 100px;
+  nav img {
+    width: 80px;
+  }
+  .truck img {
+    padding-top: 40%;
   }
 }
 
@@ -464,9 +453,15 @@ a:hover {
   h2 {
     font-size: 30px;
   }
+  nav img {
+    width: 50px;
+  }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 384px) {
+  .truck img {
+    width: 300px;
+  }
   h1 {
     width: 100%;
   }
@@ -474,6 +469,23 @@ a:hover {
     font-size: 25px;
     text-align: center;
     width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  nav {
+    padding: 5%;
+  }
+  nav ul li {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav img {
+    display: none;
+  }
+  .truck img {
+    width: 200px;
   }
 }
 
@@ -486,13 +498,17 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   font-size: 20px;
   color: #000;
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
+}
+
+footer ul {
+  width: 100%;
 }
 
 footer p {

@@ -1,12 +1,13 @@
-nav {
-    visibility: hidden;  
-}
+// nav {
+//     visibility: hidden;  
+// }
 
 h1 {
     font-family:"AZ Sailor Tattoo W05 Regular"; 
     font-size: 40px; 
     color: black;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
     width: 50%; 
     text-align: center; 
 }
@@ -16,36 +17,17 @@ h2 {
     font-size: 40px;   
 }
 
-.imageSize {
-    img {
-        width: 200px;
-        position: absolute;
-        right: 0; 
-        top: 0; 
-        padding-right: 1%;
-        padding-top: 1%;  
-    } 
-}
-
-aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: absolute; 
-    top: 40%;
-    right: 0; 
-    padding-right: 2%; 
+.socialIcons {
         ul li {
             list-style: none;
         }
             ul li a {
-            font-size: 30px; 
-            display: flex; 
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: center;
-            margin-top: 75%;
+            font-size: 30px;
+            color: #fff; 
             
     }
+}
+
+.socialIcons a:hover {
+    color: #000;
 }
