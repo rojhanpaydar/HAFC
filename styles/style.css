@@ -452,6 +452,9 @@ nav img {
   nav img {
     width: 50px;
   }
+  footer p {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 384px) {
