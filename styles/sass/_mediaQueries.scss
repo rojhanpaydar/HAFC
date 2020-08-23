@@ -1,19 +1,17 @@
 /* tablet screens */
-@media (max-width: 1024px) {
+@media (max-width: 1033px) {
 
     h1 {
-        width: 50%;
         font-size: 30px;
-        // margin-top: 25%; 
-        // font-size: 45px;
-        margin-bottom: 5%;
     }
-
-    // .truck img {
-    //     width: 400px; 
-    // }
 }
 
+@media (max-width: 845px) {
+     h1 {
+         width: 50%;  
+
+    }
+}
 
 /* tablet screens */
 @media (max-width: 795px) {
@@ -22,10 +20,6 @@
         align-items: center;
     }
 
-    h1 {
-         margin-top: 5%; 
-
-    }
 }
 
 
@@ -38,16 +32,16 @@
 
         }
     } 
+
+    h1 {
+        font-size: 25px; 
+    }
 }
 
 
 /* smaller phone screens */
 @media (max-width: 490px) {
 
-    h1 {
-        width: 80%;
-        font-size: 35px;
-    }
 
     h2 {
         font-size: 30px; 
@@ -55,8 +49,8 @@
     
     nav {
         img {
-            width: 50px; 
-
+            width: 75px;
+            margin-top: 5%;
         }
     } 
 

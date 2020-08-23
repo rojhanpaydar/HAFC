@@ -15,15 +15,23 @@
 <body>
     <main>
         <nav>
-            <ul>
+            <label for="toggle">
+                <div class="menuButton">
+                    <div class="menuButtonBurger"></div>
+                </div>
+            </label>
+            <input type="checkbox" id="toggle" name="toggle" />
+            <ul class="slidingMenu">
                 <li>
                     <a href="#">Home</a>
                     <a href="#">Our Story</a>
                     <a href="#">Contact</a>
                 </li>
-                <img src="./assets/TOASTER_OUTLINE.png"
-                    alt="A hand drawing of logo. A circle with a toaster in the middle. Tattoo font wrapping around the top and bottom that reads 'Home Appliances Food Co', which is the name of the food truck company">
+
             </ul>
+            <h1>Home Appliances Food Co.</h1>
+            <img src="./assets/TOASTER_OUTLINE.png"
+                alt="A hand drawing of logo. A circle with a toaster in the middle. Tattoo font wrapping around the top and bottom that reads 'Home Appliances Food Co', which is the name of the food truck company">
         </nav>
         <header class="flexContainer wrapper">
             <audio id="honk">
@@ -32,7 +40,6 @@
             <audio id="rev">
                 <source src="./assets/rev.wav" type="audio/mpeg">
             </audio>
-            <h1>Home Appliances Food Co.</h1>
             <h2>Coming Soon</h2>
             <div id="truck" class="truck">
                 <img src="./assets/truck_outline_updated.png"

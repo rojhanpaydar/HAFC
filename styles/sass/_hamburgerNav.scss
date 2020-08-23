@@ -1,0 +1,107 @@
+.menuButton {
+    position: relative; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 80px; 
+    height: 80px; 
+    cursor: pointer; 
+    transition: all .5s ease-in-out; 
+}
+
+.menuButtonBurger {
+    width: 50px; 
+    height: 12px; 
+    background: $patty; 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out; 
+}
+
+.menuButtonBurger::before, 
+.menuButtonBurger::after {
+    position: absolute; 
+    content: ''; 
+    width: 50px; 
+    height: 12px; 
+    background: $bun; 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out; 
+}
+
+.menuButtonBurger::before {
+    transform: translateY(-16px);
+}
+
+.menuButtonBurger::after {
+    transform: translateY(16px);
+}
+
+// animation 
+
+.menuButton.open .menuButtonBurger {
+    transform: translateX(-50px);
+    background: transparent; 
+    box-shadow: none; 
+}
+
+
+.menuButton.open .menuButtonBurger::before {
+    transform: rotate(45deg) translate(35px, -35px); 
+}
+
+.menuButton.open .menuButtonBurger::after {
+    transform: rotate(-45deg) translate(35px, 35px); 
+}
+
+// sliding menu 
+
+    .hideMe {
+        display: none;
+        }   
+        .hideMeToo {
+            display: initial;
+        }
+
+        ul.slidingMenu {
+        background: $teal;
+        position: fixed;
+        z-index: 10;
+        width: 20%; 
+        right: -30%; 
+        top: 0;
+        transition: all 0.5s; 
+    }
+
+    ul.slidingMenu a {
+        display: inline-block;
+        font-size: 20px;
+        width: 100%;
+        padding: 10%;
+        transition: all 0.3s;
+        text-align: center; 
+        color: #000;
+    }
+
+    ul.slidingMenu a:hover,
+    ul.slidingMenu a:focus {
+        background: $pink;
+        width: 100%; 
+    }
+
+    input[type="checkbox"]:checked + ul.slidingMenu {
+        right: 0; 
+    }
+
+    input[type="checkbox"] {
+        display: none; 
+    }
+
+    label[for="toggle"] {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        color: white;
+        z-index: 10;
+    }
