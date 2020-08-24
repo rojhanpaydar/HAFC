@@ -20,6 +20,18 @@
         align-items: center;
     }
 
+       input[type="checkbox"]:checked + ul.slidingMenu {
+        right: 0;
+        width: 100%;
+    }
+
+     ul.slidingMenu {
+        z-index: 9;
+            a {
+                font-size: 30px; 
+            }
+    }
+
 }
 
 
@@ -29,13 +41,13 @@
     nav {
         img {
             width: 80px; 
-
         }
     } 
 
     h1 {
         font-size: 25px; 
     }
+
 }
 
 
@@ -50,16 +62,12 @@
     nav {
         img {
             width: 75px;
-            margin-top: 5%;
+            margin-top: 6%;
         }
     } 
 
     footer p {
         font-size: 18px; 
-    }
-
-    ul.slidingMenu {
-        z-index: 9;
     }
 
     input[type="checkbox"]:checked + ul.slidingMenu {

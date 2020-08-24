@@ -394,6 +394,7 @@ nav h1 {
   cursor: pointer;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+  margin-top: 15%;
 }
 
 .menuButtonBurger {
@@ -480,7 +481,9 @@ ul.slidingMenu a {
 }
 
 ul.slidingMenu a:hover,
-ul.slidingMenu a:focus {
+ul.slidingMenu a:focus,
+ul.slidingMenu a:focus-within,
+ul.slidingMenu a:visited {
   background: #F4CAEE;
   width: 100%;
 }
@@ -582,6 +585,16 @@ label[for="toggle"] {
         -ms-flex-align: center;
             align-items: center;
   }
+  input[type="checkbox"]:checked + ul.slidingMenu {
+    right: 0;
+    width: 100%;
+  }
+  ul.slidingMenu {
+    z-index: 9;
+  }
+  ul.slidingMenu a {
+    font-size: 30px;
+  }
 }
 
 /* phone screens */
@@ -601,13 +614,10 @@ label[for="toggle"] {
   }
   nav img {
     width: 75px;
-    margin-top: 5%;
+    margin-top: 6%;
   }
   footer p {
     font-size: 18px;
-  }
-  ul.slidingMenu {
-    z-index: 9;
   }
   input[type="checkbox"]:checked + ul.slidingMenu {
     right: 0;

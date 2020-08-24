@@ -7,6 +7,7 @@
     height: 80px; 
     cursor: pointer; 
     transition: all .5s ease-in-out; 
+    margin-top: 15%;
 }
 
 .menuButtonBurger {
@@ -85,7 +86,9 @@
     }
 
     ul.slidingMenu a:hover,
-    ul.slidingMenu a:focus {
+    ul.slidingMenu a:focus,
+    ul.slidingMenu a:focus-within,
+    ul.slidingMenu a:visited {
         background: $pink;
         width: 100%; 
     }
