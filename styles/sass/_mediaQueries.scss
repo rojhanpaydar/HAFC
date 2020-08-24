@@ -55,7 +55,7 @@
     } 
 
     footer p {
-        font-size: 15px; 
+        font-size: 18px; 
     }
 
     ul.slidingMenu {
@@ -66,6 +66,7 @@
         right: 0;
         width: 100%;
     }
+
 }
 
 @media (max-width: 384px) {
@@ -75,14 +76,16 @@
     }
 
         h1 {
-        font-size: 18px; 
+        font-size: 20px; 
         width: 50%; 
     }
 
     h2 {
-        font-size: 25px; 
+        font-size: 35px;
         text-align: center; 
         width: 100%; 
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
 
 }
