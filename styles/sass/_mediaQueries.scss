@@ -57,6 +57,15 @@
     footer p {
         font-size: 15px; 
     }
+
+    ul.slidingMenu {
+        z-index: 9;
+    }
+
+    input[type="checkbox"]:checked + ul.slidingMenu {
+        right: 0;
+        width: 100%;
+    }
 }
 
 @media (max-width: 384px) {
@@ -75,6 +84,7 @@
         text-align: center; 
         width: 100%; 
     }
+
 }
 
 
