@@ -580,7 +580,8 @@ button:focus {
   src: url("WEBFONTS/Fonts/5204411/46790c89-144f-445b-a870-7baa40f97715.woff2") format("woff2"), url("WEBFONTS/Fonts/5204411/dfd761ed-4039-4cb8-979a-ef953d4ee7e0.woff") format("woff");
 }
 
-header p {
+header ul li {
+  list-style-type: none;
   font-family: 'Special Elite', cursive;
   font-size: 20px;
 }
@@ -731,4 +732,48 @@ footer p {
 footer button {
   border: none;
   background: none;
+}
+
+#story footer ul {
+  margin: 0;
+}
+
+#story footer {
+  position: fixed;
+  bottom: 0;
+}
+
+#story ul {
+  margin-top: 5%;
+}
+
+#story ul li {
+  margin-bottom: 5%;
+  line-height: 30px;
+}
+
+#story ul.slidingMenu {
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  #story header {
+    height: 100%;
+    margin-bottom: 10%;
+  }
+}
+
+@media (max-width: 450px) {
+  #story header {
+    margin-bottom: 80%;
+  }
+  #story li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  footer {
+    visibility: hidden;
+  }
 }

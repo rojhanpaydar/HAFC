@@ -1,0 +1,47 @@
+
+#story footer ul {
+    margin: 0;
+}
+
+#story footer {
+    position: fixed;
+    bottom: 0; 
+}
+
+#story ul {
+    margin-top: 5%; 
+    li {
+        margin-bottom: 5%; 
+        line-height: 30px;
+    }
+}
+
+#story ul.slidingMenu {
+    margin: 0; 
+}
+
+@media (max-width: 800px) {
+  #story header {
+        height: 100%; 
+        margin-bottom: 10%;
+    }  
+}
+
+@media (max-width: 450px) {
+    #story header {
+        margin-bottom: 80%;
+    }
+
+    #story li {
+        font-size: 15px; 
+    }
+}
+
+@media (max-width: 375px) {
+    footer {
+        visibility: hidden;
+    }
+}
+
+
+
