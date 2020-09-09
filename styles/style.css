@@ -785,3 +785,30 @@ footer button {
     visibility: hidden;
   }
 }
+
+#foodMenu header img {
+  width: 170px;
+}
+
+#foodMenu header div {
+  width: 31%;
+  height: 170px;
+  display: inline-block;
+  text-align: center;
+  margin: 2% 1% 0 1%;
+  border: 2px solid black;
+}
+
+#foodMenu header div img {
+  width: 50%;
+}
+
+#foodMenu header ul {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#foodMenu footer {
+  position: fixed;
+  bottom: 0;
+}
