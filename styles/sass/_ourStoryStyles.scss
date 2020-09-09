@@ -1,11 +1,15 @@
 
-#story footer ul {
-    margin: 0;
-}
+// #story footer ul {
+//     margin: 0;    
+// }
 
 #story footer {
     position: fixed;
     bottom: 0; 
+}
+
+#story header {
+    margin-bottom: 20%; 
 }
 
 #story ul {
@@ -23,7 +27,14 @@
 @media (max-width: 800px) {
   #story header {
         height: 100%; 
-        margin-bottom: 10%;
+        margin-bottom: 30%;
+    }  
+}
+
+@media (max-width: 600px) {
+  #story header {
+        height: 100%; 
+        margin-bottom: 60%;
     }  
 }
 
