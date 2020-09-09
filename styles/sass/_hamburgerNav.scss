@@ -17,6 +17,8 @@
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255,101,47,.2);
     transition: all .5s ease-in-out; 
+    position: absolute; 
+    left: 0;
 }
 
 .menuButtonBurger::before, 
@@ -29,6 +31,7 @@
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255,101,47,.2);
     transition: all .5s ease-in-out; 
+    left: 0; 
 }
 
 .menuButtonBurger::before {
@@ -93,6 +96,7 @@
         width: 100%; 
     }
 
+
     input[type="checkbox"]:checked + ul.slidingMenu {
         right: 0; 
     }
@@ -101,10 +105,20 @@
         display: none; 
     }
 
-    label[for="toggle"] {
+    nav button {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        background: none;
+        border: none;
         position: fixed;
         top: 10px;
         left: 10px;
         color: white;
         z-index: 10;
     }
+
+    button:focus {
+        border: 2px solid $teal; 
+    }
+    

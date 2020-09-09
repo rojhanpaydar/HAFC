@@ -406,6 +406,8 @@ nav h1 {
           box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+  position: absolute;
+  left: 0;
 }
 
 .menuButtonBurger::before,
@@ -420,6 +422,7 @@ nav h1 {
           box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+  left: 0;
 }
 
 .menuButtonBurger::before {
@@ -496,12 +499,27 @@ input[type="checkbox"] {
   display: none;
 }
 
-label[for="toggle"] {
+nav button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+  border: none;
   position: fixed;
   top: 10px;
   left: 10px;
   color: white;
   z-index: 10;
+}
+
+button:focus {
+  border: 2px solid #9BD9CC;
 }
 
 #truck {
@@ -560,6 +578,11 @@ label[for="toggle"] {
 @font-face {
   font-family: "AZ Sailor Tattoo W05 Regular";
   src: url("WEBFONTS/Fonts/5204411/46790c89-144f-445b-a870-7baa40f97715.woff2") format("woff2"), url("WEBFONTS/Fonts/5204411/dfd761ed-4039-4cb8-979a-ef953d4ee7e0.woff") format("woff");
+}
+
+header p {
+  font-family: 'Special Elite', cursive;
+  font-size: 20px;
 }
 
 /* tablet screens */
@@ -703,4 +726,9 @@ footer ul li {
 
 footer p {
   color: #fff;
+}
+
+footer button {
+  border: none;
+  background: none;
 }

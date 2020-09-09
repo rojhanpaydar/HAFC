@@ -16,16 +16,16 @@
 <body>
     <main>
         <nav>
-            <label for="toggle">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Main menu" aria-expanded="false">
                 <div class="menuButton">
                     <div class="menuButtonBurger"></div>
                 </div>
-            </label>
-            <input type="checkbox" id="toggle" name="toggle" />
+            </button>
+            <input type="checkbox" id="menu" name="toggle" />
             <ul class="slidingMenu">
-                <li>
-                    <a href="#">Home</a>
-                    <a href="#">Our Story</a>
+                <li aria-label="listed menu items">
+                    <a href="index.html">Home</a>
+                    <a href="story.html">Our Story</a>
                     <a href="#">Contact</a>
                 </li>
 
@@ -53,15 +53,19 @@
             <li>
                 <p>Home Appliances Food Co ©</p>
             </li>
-            <li>
-                <a target="_blank" href="https://www.instagram.com/homeappliancesfoodco/"><i
-                        class="fab fa-instagram"></i></a>
+            <li aria-label="Click this link for Home Appliances Food Companys' Instagram account">
+                <button>
+                    <a target="_blank" href="https://www.instagram.com/homeappliancesfoodco/"><i
+                            class="fab fa-instagram"></i></a>
+                </button>
             </li>
-            <li><a target="_blank" href="https://www.facebook.com/homeappliancesfoodco/"><i
-                        class="fab fa-facebook-f"></i></a></li>
+            <li aria-label="Click this link for Home Appliances Food Company's Facebook page">
+                <button>
+                    <a target="_blank" href="https://www.facebook.com/homeappliancesfoodco/"><i
+                            class="fab fa-facebook-f"></i></a></li>
+            </button>
         </ul>
     </footer>
-    </style>
 
     <style type="text/css">
         @font-face {
