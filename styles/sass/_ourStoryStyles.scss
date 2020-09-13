@@ -4,7 +4,7 @@
 }
 
 #story header {
-    margin-bottom: 20%; 
+    // margin-bottom: 20%; 
     overflow: scroll;
     overflow-y: auto;  
 }
@@ -25,20 +25,20 @@
 @media (max-width: 800px) {
   #story header {
         height: 100%; 
-        margin-bottom: 30%;
+        // margin-bottom: 30%;
     }  
 }
 
 @media (max-width: 600px) {
   #story header {
         height: 100%; 
-        margin-bottom: 60%;
+        // margin-bottom: 60%;
     }  
 }
 
 @media (max-width: 450px) {
     #story header {
-        margin-bottom: 80%;
+        // margin-bottom: 80%;
     }
 
     #story li {
