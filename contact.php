@@ -1,5 +1,15 @@
 <?php
-if($_POST["message"]) {
-    mail("rojhanpaydar@gmail.com", "Form to email message", $_POST["message"], "From: an@email.address");
+
+if (isset($_POST['submit'])) {
+    $name = $_POST['name'];
+    $subject = $_POST['subject'];
+    $mailFrom = $_POST['mail'];
+    $message = $_POST['message'];
+
+    $mailTo = "ro.paydar@mintbean.io";
+    $headers = "From: ".$mailFrom;
+    $text = "You have an email from".$name.".\n\n".$message; 
+
+    mail($mailTo, $subject, $txt, $headers);
+    header("Location: index.php?mailsend");
 }
-?>

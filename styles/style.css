@@ -896,3 +896,8 @@ footer button {
   width: 100%;
   margin-bottom: 10%;
 }
+
+#contact footer {
+  margin-top: 5%;
+  position: static;
+}
