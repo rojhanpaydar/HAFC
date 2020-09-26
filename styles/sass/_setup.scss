@@ -19,13 +19,16 @@ p {
 }
 
 html,
-body,
-main {
+body {
     height: 100%; 
     font-size: 62.5%;
     min-width: 100%;
     min-height: 100%;
 }
+
+// main {
+//   background: #B7D9D2;
+// }
 
 img {
   margin: 0; 

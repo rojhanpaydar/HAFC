@@ -250,8 +250,7 @@ p {
 }
 
 html,
-body,
-main {
+body {
   height: 100%;
   font-size: 62.5%;
   min-width: 100%;
@@ -755,6 +754,7 @@ footer button {
 @media (max-width: 800px) {
   #story header {
     height: 100%;
+    margin-bottom: 20%;
   }
 }
 
@@ -771,10 +771,6 @@ footer button {
   #story a {
     font-size: 25px;
   }
-}
-
-#foodMenu main {
-  margin-bottom: 100%;
 }
 
 #foodMenu nav {
