@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <main>
+    <main id="contact">
         <nav>
             <button class="menu-toggle" id="menu-toggle" aria-label="Main menu" aria-expanded="false">
                 <div class="menuButton">
@@ -36,27 +36,58 @@
                 alt="A hand drawing of logo. A circle with a toaster in the middle. Tattoo font wrapping around the top and bottom that reads 'Home Appliances Food Co', which is the name of the food truck company">
         </nav>
         <header class="flexContainer wrapper">
-            <h2>Book The Truck</h2>
+            <h2>form check testing</h2>
+            <!-- <h2>Book The Truck</h2> -->
+
+            <form method="post" action="contact.php">
+                <textarea name="message"></textarea>
+                <input type="submit">
+            </form>
+
+            <!-- <div class="container">
+                <form action="action_page.php">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="date">Dates</label>
+                    <input type="text" id="date" name="date" placeholder="When do you want the truck by..">
+
+                    <label for="order">How many orders</label>
+                    <input type="text" id="order" name="order" placeholder="Quantity..">
+
+                    <label for="subject">Special requests</label>
+                    <textarea id="subject" name="subject" placeholder="Please give us a detailed inquiry.."
+                        style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+            </div> -->
+
         </header>
-    </main>
-    <footer>
-        <ul>
-            <li>
-                <p>Home Appliances Food Co ©</p>
-            </li>
-            <li aria-label="Click this link for Home Appliances Food Companys' Instagram account">
-                <button>
-                    <a target="_blank" href="https://www.instagram.com/homeappliancesfoodco/"><i
-                            class="fab fa-instagram"></i></a>
+        <footer>
+            <ul>
+                <li>
+                    <p>Home Appliances Food Co ©</p>
+                </li>
+                <li aria-label="Click this link for Home Appliances Food Companys' Instagram account">
+                    <button>
+                        <a target="_blank" href="https://www.instagram.com/homeappliancesfoodco/"><i
+                                class="fab fa-instagram"></i></a>
+                    </button>
+                </li>
+                <li aria-label="Click this link for Home Appliances Food Company's Facebook page">
+                    <button>
+                        <a target="_blank" href="https://www.facebook.com/homeappliancesfoodco/"><i
+                                class="fab fa-facebook-f"></i></a></li>
                 </button>
-            </li>
-            <li aria-label="Click this link for Home Appliances Food Company's Facebook page">
-                <button>
-                    <a target="_blank" href="https://www.facebook.com/homeappliancesfoodco/"><i
-                            class="fab fa-facebook-f"></i></a></li>
-            </button>
-        </ul>
-    </footer>
+            </ul>
+        </footer>
+    </main>
 
     <style type="text/css">
         @font-face {

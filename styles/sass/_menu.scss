@@ -1,27 +1,74 @@
 
+// * {
+//     border: 2px solid purple; 
+// }
+
+#foodMenu main {
+    margin-bottom: 100%; 
+}
+
+#foodMenu nav {
+    margin-bottom: 5%; 
+}
+
+.space {
+    margin-bottom: 5%;
+}
+
 // placeholder until I get images
 #foodMenu header img {
-    width: 170px; 
+    width: 75%; 
+    margin-bottom: 5%; 
 }
 
 #foodMenu header div {
-    width: 31%;
-    height: 170px;
-    display: inline-block;
-    text-align: center;
-    margin: 2% 1% 0 1%; 
-    border: 2px solid black; 
-            img {
-                width: 50%;
-            }
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
 }
 
 #foodMenu header ul {
     width: 80%;
     margin: 0 auto; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#foodMenu header li {
+    margin-bottom: 5%; 
+    margin-left: 20px; 
+}
+
+#foodMenu .foodFlexContainer {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    width: 75%; 
 }
 
 #foodMenu footer {
-    position: fixed;
-    bottom: 0; 
+    position: static;  
 }
+
+
+@media (max-width: 660px) {
+    #foodMenu header img {
+        width: 100%; 
+    }
+
+    #foodMenu header div {
+        width: 100%; 
+    }
+
+    #foodMenu header li {
+        text-align: center;
+    }
+
+    #foodMenu .foodFlexContainer {
+       display: contents; 
+    }
+
+}
+
