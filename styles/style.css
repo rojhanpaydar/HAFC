@@ -480,6 +480,8 @@ ul.slidingMenu a {
   transition: all 0.3s;
   text-align: center;
   color: #000;
+  font-family: "Special Elite", cursive;
+  font-size: 20px;
 }
 
 ul.slidingMenu a:hover,
@@ -548,6 +550,10 @@ button:focus {
   }
 }
 
+main {
+  height: 100%;
+}
+
 .flexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -583,6 +589,11 @@ header ul li {
   list-style-type: none;
   font-family: "Special Elite", cursive;
   font-size: 20px;
+}
+
+footer li {
+  font-family: "Special Elite", cursive;
+  font-size: 40px;
 }
 
 /* tablet screens */

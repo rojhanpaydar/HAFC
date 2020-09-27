@@ -25,6 +25,10 @@
   }
 }
 
+main {
+  height: 100%;
+}
+
 .flexContainer {
   display: flex;
   flex-direction: column;
@@ -56,6 +60,11 @@ header ul li {
   list-style-type: none;
   font-family: "Special Elite", cursive;
   font-size: 20px;
+}
+
+footer li {
+  font-family: "Special Elite", cursive;
+  font-size: 40px;
 }
 
 // COLOURS
