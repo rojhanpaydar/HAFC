@@ -854,6 +854,7 @@ footer button {
   }
   #foodMenu header li {
     text-align: center;
+    margin-left: 0px;
   }
   #foodMenu .foodFlexContainer {
     display: contents;
