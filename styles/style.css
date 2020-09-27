@@ -581,7 +581,7 @@ button:focus {
 
 header ul li {
   list-style-type: none;
-  font-family: 'Special Elite', cursive;
+  font-family: "Special Elite", cursive;
   font-size: 20px;
 }
 
@@ -849,7 +849,18 @@ footer button {
   }
 }
 
-#contact input[type=text], select, textarea {
+#contact .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+#contact input[type="text"],
+#contact input[type="yourEmail"],
+#contact input[type="requestDate"],
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -861,7 +872,7 @@ footer button {
   font-size: 25px;
 }
 
-#contact input[type=submit] {
+#contact input[type="submit"] {
   background-color: #9BD9CC;
   color: black;
   padding: 12px 20px;
@@ -869,10 +880,11 @@ footer button {
   border-radius: 4px;
   cursor: pointer;
   font-size: 25px;
+  width: 100%;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
-#contact input[type=submit]:hover {
+#contact input[type="submit"]:hover {
   background-color: #F4CAEE;
 }
 
@@ -884,17 +896,15 @@ footer button {
 #contact button,
 #contact input,
 #contact textarea {
-  font-family: 'Special Elite', cursive;
+  font-family: "Special Elite", cursive;
   font-size: 20px;
 }
 
-/* Add a background color and some padding around the form */
-#contact .container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  width: 100%;
-  margin-bottom: 10%;
+#contact h3 {
+  font-family: "Special Elite", cursive;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 5%;
 }
 
 #contact footer {

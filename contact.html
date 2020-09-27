@@ -37,26 +37,36 @@
         </nav>
         <header class="flexContainer wrapper">
             <h2>Book The Truck</h2>
+            <h3>For good food and a good time, please fill out the inquiry form.</h3>
             <div class="container">
 
                 <form name="contact" method="POST" data-netlify="true">
-                        <label for="name">Your Name:</label> 
-                        <input type="text" name="name" placeholder="First and last name"/>
-    
-                        <label for="yourEmail">Your Email:</label> 
-                        <input type="email" id="yourEmail" name="yourEmail" placeholder="Your email"/>
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" placeholder="First and last name" />
+                    <br>
+                    <br>
+                    <label for="yourEmail">Your Email:</label>
+                    <input type="email" id="yourEmail" name="yourEmail" placeholder="Your email" />
+                    <br>
+                    <br>
+                    <label for="phone">Your phone number:</label>
+                    <input type="text" name="phone" placeholder="xxx-xxx-xxxx" />
+                    <br>
+                    <br>
+                    <label for="requestDate">Truck Request Date:</label>
+                    <input type="date" id="requestDate" name="requestDate">
+                    <br>
+                    <br>
 
-                        <label for="requestDate">Truck Request Date:</label>
+                    <textarea id="orderDetails" name="orderDetails"
+                        placeholder="Please share any additional questions or comments! We will get back to you very soon!"
+                        style="height:200px"></textarea>
 
-                        <input type="date" id="requestDate" name="requestDate">
-
-                        <textarea id="orderDetails" name="orderDetails" placeholder="Please share any additional questions or comments! We will get back to you very soon!" style="height:200px"></textarea>
-    
                     <div>
                         <div data-netlify-recaptcha="true"></div>
                     </div>
-                        <input type="submit" value="SUBMIT"></input>
-    
+                    <input type="submit" value="SUBMIT"></input>
+
                 </form>
             </div>
         </header>
