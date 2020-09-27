@@ -7,8 +7,8 @@
 }
 
 #contact input[type="text"],
-#contact input[type="yourEmail"],
-#contact input[type="requestDate"],
+#contact input[name="yourEmail"],
+#contact input[name="requestDate"],
 textarea {
   width: 100%;
   padding: 12px;
