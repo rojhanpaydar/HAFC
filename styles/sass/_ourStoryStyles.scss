@@ -38,6 +38,16 @@
     }
 }
 
+@media (max-width: 360px) {
+    #story header {
+        margin-bottom: 50%; 
+    }
+
+    #story footer p {
+        font-size: 15px; 
+    }
+}
+
 
 
 
