@@ -2,6 +2,10 @@
     position: static;  
 }
 
+// #story header {
+//     height: 100%; 
+// }
+
 #story ul {
     margin-top: 5%; 
     li {
@@ -38,21 +42,24 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 375px) {
     #story header {
         margin-bottom: 50%; 
+        
     }
 
     #story footer p {
         font-size: 15px; 
     }
+
+    #story footer {
+       margin-top: 400px;
+   }
 }
 
-@media (max-width: 320px) {
-    #story header {
-        margin-bottom: 100%; 
-    }
-}
+// @media (max-width: 320px) {
+   
+// }
 
 
 

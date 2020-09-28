@@ -550,10 +550,6 @@ button:focus {
   }
 }
 
-main {
-  height: 100%;
-}
-
 .flexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -784,12 +780,15 @@ footer button {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 375px) {
   #story header {
     margin-bottom: 50%;
   }
   #story footer p {
     font-size: 15px;
+  }
+  #story footer {
+    margin-top: 400px;
   }
 }
 
