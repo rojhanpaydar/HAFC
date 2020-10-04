@@ -79,7 +79,7 @@
 
 @media (max-width: 384px) {
 
-     .truck img {
+    .truck img {
         width: 200px; 
         margin-top: 15%;
     }
@@ -89,6 +89,13 @@
         width: 50%; 
     }
 
+    h2 {
+        font-size: 35px;
+        text-align: center; 
+        width: 100%; 
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
 
 }
 
